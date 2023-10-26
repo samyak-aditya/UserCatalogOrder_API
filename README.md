@@ -1,4 +1,4 @@
-# unitylabs_assignment
+# Unitylabs_assignment
 
 ## Testing Guide
 
@@ -22,6 +22,7 @@ json :-
   "password": "your_password",
   "type": "buyer" // or "seller"
 }
+
 Note: Register a user with a username and password.
 ___________________________________________________________
 
@@ -39,6 +40,7 @@ json:-
   "username": "your_username",
   "password": "your_password"
 }
+
 Note: Authenticate a user and receive a JWT token for authorization.
 _______________________________________________________________
 
@@ -49,6 +51,7 @@ Request:
 Method: GET
 Headers:
 Authorization: 
+
 Note: Retrieve the list of seller
 ___________________________________________________________
 
@@ -59,6 +62,7 @@ Request:
 Method: GET
 Headers:
 Authorization: Bearer JWT_TOKEN (replace with your JWT token)
+
 Note: Retrieve the catalog for a specific seller.
 ______________________________________________________________
 
@@ -82,6 +86,7 @@ json:-
     }
   ]
 }
+
 Note: Create an order for a buyer with the specified buyerId from a seller.
 ________________________________________________________________
 
@@ -108,6 +113,7 @@ json:-
     }
   ]
 }
+
 Note: Create a catalog for a seller with the specified sellerId.
 
 _____________________________________________________________
@@ -119,6 +125,7 @@ Request:
 Method: GET
 Headers:
 Authorization: Bearer JWT_TOKEN (replace with your JWT token)
+
 Note: Retrieve orders received by the seller.
 ________________________________________________________________
 
